@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Contact Form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <form class="form" id="form">
+        <h1>Contact Us</h1>
+
+        <div class="formItems">
+            <div class="formItemNames ">
+                <div class="formItemFirstName">
+                    <label for="firstName">First Name <span>*</span></label>
+                    <input type="text" name="firstName" id="firstName">
+                    <p class="error-message">This field is required</p>
+                </div>
+                <div class="formItem formItemLastName ">
+                    <label for="lastName">Last Name <span>*</span></label>
+                    <input type="text" name="lastName" id="lastName">
+                    <p class="error-message">This field is required</p>
+
+                </div>
+            </div>
+            <div class="formItem formItemEmail">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" name="email" id="email">
+                <p class="error-message">This field is required</p>
+
+            </div>
+            <div class="formItem formItemQueryType">
+                <label for="query-type">Query Type <span>*</span></label>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+                        <label for="general-enquiry">General Enquiry</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="query-type" id="support-request" value="Support Request">
+                        <label for="support-request">Support Request</label>
+                    </div>
+                </div>
+                <p class="error-message">This field is required</p>
+            </div>
+            <div class="formItem formItemMessage">
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <p class="error-message">This field is required</p>
+            </div>
+            <div class="formItem formItemCheckbox">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">I consent to being contacted by the team <span>*</span></label>
+                </div>
+                <p class="error-message">This field is required</p>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+            <div class="success-message">
+                <div class="message-sent">
+                    <img class="success-img" src="images/icon-success-check.svg" alt="">
+                    <h2>Message Sent!</h2>
+                </div>
+                <p>Thanks for completing the form. We'll be in touch soon!</p>
+            </div>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
